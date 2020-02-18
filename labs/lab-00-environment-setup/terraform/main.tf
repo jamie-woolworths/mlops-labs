@@ -53,7 +53,7 @@ module "kfp_gke_cluster" {
 module "ml_metadata_mysql" {
   source  = "./modules/mysql"
   region  = var.region
-  name    = "${var.name_prefix}-metadata-2"
+  name    = "${var.name_prefix}-metadata-3"
 }
 
 # Create Cloud Storage bucket for artifact storage
