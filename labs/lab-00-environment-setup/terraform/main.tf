@@ -50,11 +50,11 @@ module "kfp_gke_cluster" {
 }
 
 # Create the MySQL instance for ML Metadata
-module "ml_metadata_mysql" {
-  source  = "./modules/mysql"
-  region  = var.region
-  name    = "${var.name_prefix}-metadata-4"
-}
+#module "ml_metadata_mysql" {
+#  source  = "./modules/mysql"
+#  region  = var.region
+#  name    = "${var.name_prefix}-metadata-5"
+#}
 
 # Create Cloud Storage bucket for artifact storage
 resource "google_storage_bucket" "artifact_store" {
